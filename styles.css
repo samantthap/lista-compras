@@ -166,9 +166,46 @@ ul {
     outline: none; /* Remove o contorno padrão */
   }
 
-  @media screen and (max-width: 1064px) {
-    .container {
-        width: 90%;
-        height: auto;
+  @media screen and (max-width: 360px) {
+    body {
+        padding: 16px; /* Adiciona espaço para evitar elementos encostados nas bordas */
+    }
+
+    main {
+        width: 100%; /* Usa toda a largura disponível */
+        padding: 32px 16px; /* Reduz o padding para caber melhor */
+    }
+
+    h2 {
+        font-size: 18px; /* Reduz o tamanho do título */
+        line-height: 28px;
+        text-align: center; /* Garante alinhamento central */
+    }
+
+    img {
+        width: 100px; /* Reduz o tamanho da imagem */
+    }
+
+    p {
+        font-size: 16px; /* Ajusta o tamanho do texto */
+        line-height: 22px;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .input-item {
+        width: 100%; /* Garante que o input ocupe a largura total do container */
+    }
+
+    .button-item {
+        width: 100%; /* Faz o botão ocupar a largura do container */
+        padding: 12px; /* Ajusta o tamanho do botão */
+    }
+
+    .container-lista {
+        gap: 4px; /* Reduz o espaçamento entre itens da lista */
+    }
+
+    hr {
+        margin-bottom: 16px; /* Reduz o espaçamento para economizar espaço */
     }
 }
