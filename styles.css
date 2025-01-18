@@ -162,3 +162,41 @@ ul {
     box-shadow: 0 0 8px 4px rgba(233, 97, 126, 0.5); /* Efeito desfocado */
     outline: none; /* Remove o contorno padrão */
   }
+
+ @media (max-width: 768px) {
+    body {
+        height: auto; /* Permite que o conteúdo se expanda */
+        padding: 16px; /* Adiciona espaço nas laterais */
+    }
+
+    main {
+        width: 100%; /* Faz o container ocupar toda a largura disponível */
+        padding: 32px 16px; /* Ajusta o espaçamento interno */
+        margin-top: 32px; /* Reduz o espaço superior */
+        gap: 16px; /* Reduz o espaçamento entre os itens */
+    }
+
+    img {
+        width: 80px; /* Reduz o tamanho da imagem */
+    }
+
+    h2 {
+        font-size: 18px; /* Diminui o tamanho do título */
+        line-height: 28px; /* Ajusta o espaçamento entre linhas */
+    }
+
+    p {
+        font-size: 16px; /* Ajusta o tamanho do texto */
+        line-height: 22px; /* Ajusta a legibilidade */
+        text-align: center; /* Centraliza o texto para telas menores */
+    }
+
+    .input-item {
+        width: 100%; /* Faz o campo de entrada ocupar toda a largura */
+    }
+
+    .button-item {
+        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
+        padding: 8px 12px; /* Reduz o espaçamento interno do botão */
+    }
+}
