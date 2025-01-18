@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -16,13 +16,16 @@
 }
 
 body {
-    background: var(--degrade-azul);
-    background-repeat: no-repeat;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0; /* Remove margens padrão */
+    width: 100%; /* Garante largura total */
+    height: 100vh; /* Ocupa 100% da altura da janela */
+    background: var(--degrade-azul); /* Cor ou gradiente de fundo */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-size: cover; /* Garante que o background ocupe toda a área */
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Elementos empilhados verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    justify-content: center; /* Centraliza os elementos verticalmente */
 }
 
 main {
@@ -163,40 +166,9 @@ ul {
     outline: none; /* Remove o contorno padrão */
   }
 
- @media (max-width: 768px) {
-    body {
-        height: auto; /* Permite que o conteúdo se expanda */
-        padding: 16px; /* Adiciona espaço nas laterais */
-    }
-
-    main {
-        width: 100%; /* Faz o container ocupar toda a largura disponível */
-        padding: 32px 16px; /* Ajusta o espaçamento interno */
-        margin-top: 32px; /* Reduz o espaço superior */
-        gap: 16px; /* Reduz o espaçamento entre os itens */
-    }
-
-    img {
-        width: 80px; /* Reduz o tamanho da imagem */
-    }
-
-    h2 {
-        font-size: 18px; /* Diminui o tamanho do título */
-        line-height: 28px; /* Ajusta o espaçamento entre linhas */
-    }
-
-    p {
-        font-size: 16px; /* Ajusta o tamanho do texto */
-        line-height: 22px; /* Ajusta a legibilidade */
-        text-align: center; /* Centraliza o texto para telas menores */
-    }
-
-    .input-item {
-        width: 100%; /* Faz o campo de entrada ocupar toda a largura */
-    }
-
-    .button-item {
-        font-size: 16px; /* Ajusta o tamanho da fonte do botão */
-        padding: 8px 12px; /* Reduz o espaçamento interno do botão */
+  @media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
     }
 }
