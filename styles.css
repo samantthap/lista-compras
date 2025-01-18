@@ -166,7 +166,7 @@ ul {
     outline: none; /* Remove o contorno padrão */
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (max-width: 412px) {
     body {
         padding: 16px; /* Adiciona espaço para evitar elementos encostados nas bordas */
     }
